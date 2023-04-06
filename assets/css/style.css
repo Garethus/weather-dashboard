@@ -1,0 +1,130 @@
+:root {
+  --primary: #BDD8F1;
+  --secondary: #82A6CB;
+  --light-dark: #3667A6;
+  --dark: #214177;
+  --border-radius: 0.3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+main {
+  margin: 20px auto;
+  width: 94%;
+}
+
+.app-title {
+  font-size: 3rem;
+  color: var(--dark);
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.btn {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--dark);
+  border: none;
+  outline: none;
+  background-color: var(--secondary);
+  box-shadow: 3px 3px var(--dark);
+  transform: translate(-1px, -1px);
+}
+
+.card {
+  background-color: var(--secondary);
+  border: 2px solid;
+  padding: 0 3%;
+  align-items: center;
+}
+
+.card-header {
+  color: var(--dark);
+  padding: 2.5%;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.card-body {
+  padding: 2.5%;
+}
+
+#current {
+  border: 2px solid;
+  padding: 0 3%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 3%;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+}
+
+/* HEIGHT / WIDTH UTILS */
+.min-100-vh {
+  min-height: 100vh;
+}
+
+/* FLEX CONTENT */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.hero {
+  padding: 0 4%;
+  background-color: var(--secondary);
+  text-align: center;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
+
+.searched-city {
+  width: 100%;
+  padding: 3%;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 calc(100% * 3 / 12 - 2%);
+  }
+
+  .col-md-9 {
+    flex: 0 0 calc(100% * 9 / 12 - 2%);
+  }
+}
